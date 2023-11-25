@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<title>Future FC | Login</title>
+<!-- MDB icon -->
+<link rel="icon" href="./img/favicon.png" type="image/x-icon" />
+<!-- Font Awesome -->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+/>
+<!-- Google Fonts Roboto -->
+<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+/>
+<!-- MDB -->
+<link rel="stylesheet" href="css/mdb.min.css" />
+
+<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+
+    <div class="boxes">
+        <div class="father">
+
+            <!--START SignUp-->
+            <section class="sign w-100 p-4 d-flex justify-content-center pb-4">
+            <div class="form-wrapper">
+                <form style="width: 26rem;">
+                    <div class="title">SignUp</div>
+                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                    <div class="row mb-4">
+                        <div class="col">
+                            <div data-mdb-input-init="" class="form-outline inp">
+                            <input type="text" id="form3Example1" class="form-control">
+                                <label 
+                                class="form-label" 
+                                for="form3Example1" 
+                                style="margin-left: 0px;">
+                                First name
+                                </label>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div data-mdb-input-init="" class="form-outline inp">
+                                <input 
+                                type="text" 
+                                id="form3Example2" 
+                                class="form-control">
+                                <label 
+                                class="form-label" 
+                                for="form3Example2" 
+                                style="margin-left: 0px;">
+                                Last name
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Email input -->
+                    <div 
+                        data-mdb-input-init="" class="form-outline inp mb-4">
+                        <input type="email" id="form3Example3" class="form-control">
+                        <i  class   ="fa-regular fa-envelope" 
+                            style   ="margin-right: 20px;width: 12px;
+                                    display: flex;
+                                    justify-content: center;">
+                        </i>
+                        <label 
+                            class="form-label" 
+                            for="form3Example3" 
+                            style="margin-left: 0px;">
+                            Email address
+                        </label>
+                    </div>
+    
+                    <!-- Password input -->
+                    <div data-mdb-input-init="" class="form-outline inp mb-4">
+                        <input type="password" id="form3Example4" class="form-control">
+                        <i  class   ="eye fa-regular fa-eye-slash fa-sm" 
+                        onclick ="showHide()"
+                        style   ="margin-right: 20px;cursor: pointer;width: 12px;display: flex;justify-content: center;"></i>
+                        <label class="form-label" for="form3Example4" style="margin-left: 0px;">Password</label>
+                    </div>
+                    <!-- Password input -->
+                    <div data-mdb-input-init="" class="form-outline inp mb-4">
+                        <input type="password" id="form3Example040" class="form-control">
+                        <i  class   ="eye fa-regular fa-eye-slash fa-sm" 
+                        onclick ="showHide()"
+                        style   ="margin-right: 20px;cursor: pointer;width: 12px;display: flex;justify-content: center;"></i>
+                        <label class="form-label" for="form3Example040" style="margin-left: 0px;">Confirm Password</label>
+                    </div>
+    
+                    <!-- Checkbox -->
+                    <div class="form-check d-flex justify-content-center mb-4">
+                        <input 
+                            class="form-check-input me-2" 
+                            type="checkbox" 
+                            value="" 
+                            id="form2Example32" 
+                            checked="">
+                        <label class="rmem d-flex align-items-center form-check-label" for="form2Example32">
+                            Subscribe to our newsletter
+                        </label>
+                    </div>
+    
+                    <!-- Submit button -->
+                    <button 
+                        data-mdb-ripple-init="" 
+                        type="submit" 
+                        class="log-sign btn btn-primary btn-block mb-4">
+                        Sign up
+                    </button>
+                    <span 
+                    style="display: flex;justify-content: center;"
+                    id="Login" 
+                    onclick="change()">Already have an Account</span>
+                </form>
+            </div>
+            </section>
+
+
+
+            <!--START Login-->
+            <section class="log w-100 p-4 d-flex justify-content-center pb-4">
+                <div class="form-wrapper">
+                    <form 
+                    style="width: 26rem;" 
+                    data-gtm-form-interact-id="0">
+                    <div class="title">Login</div>
+    
+                    <!-- Email input -->
+                    <div data-mdb-input-init="" class="email inp form-outline ">
+                        <input  type  ="email" id="form2Example1" class="form-control">
+                        <i class="fa-regular fa-envelope" style="margin-right: 20px;width: 12px;display: flex;justify-content: center;"></i>
+                        <label  class ="form-label" 
+                                for   ="form2Example1" 
+                                style ="margin-left: 0px;">
+                                Email address
+                        </label>
+                    </div>
+    
+                    <!-- Password input -->
+                    <div data-mdb-input-init="" class="form-outline inp mb-4">
+                        <input 
+                        type="password" 
+                        id="form2Example2" 
+                        class="form-control passInp">
+                        <i  class   ="eye fa-regular fa-eye-slash fa-sm" 
+                            onclick ="showHide()"
+                            style   ="margin-right: 20px;cursor: pointer;width: 12px;display: flex;justify-content: center;"></i>
+                        <label 
+                        class ="form-label" 
+                        for   ="form2Example2" 
+                        style ="margin-left: 0px;">
+                        Password
+                        </label>
+                    </div>
+    
+                    <!-- 2 column grid layout for inline styling -->
+                    <div class="row mb-4">
+                        <div class="col d-flex justify-content-center">
+                        <!-- Checkbox -->
+                        <div class="form-check">
+                            <input 
+                            class         ="form-check-input" 
+                            type          ="checkbox" 
+                            value         ="" 
+                            id            ="form2Example31" 
+                            checked       ="" 
+                            autocompleted ="" 
+                            data-gtm-form-interact-field-id ="0">
+                            <label class="rmem form-check-label" for="form2Example31"> Remember me </label>
+                        </div>
+                        </div>
+    
+                        <div class="col">
+                        <!-- Simple link -->
+                        <span onclick="forget()">Forgot password?</span>
+                        </div>
+                    </div>
+    
+                    <!-- Submit button -->
+                    <button 
+                    data-mdb-ripple-init="" 
+                    type                ="submit" 
+                    class               ="log-sign btn btn-primary btn-block mb-4">
+                    log in
+                    </button>
+    
+                    <!-- Register buttons -->
+                        <div class="text-center">
+                        <p>Don't have an account ? <span id="SignUp" onclick="change()">Register</span></p>
+                        </div>
+    
+            
+    
+                    </form>
+                </div>
+            </section>
+        
+
+        </div>
+        
+        <!--Start ForgetPassword-->
+        <section class="forg  w-100 p-4 d-flex justify-content-center pb-4">
+            <div class="form-wrapper">
+                <form style="width: 26rem;">
+                    <div class="title" style="font-size: 25px;">Find Your Account</div>
+        
+                    <div data-mdb-input-init="" class="form-outline inp mb-4">
+                    <input type="text" id="form3Example10" class="form-control">
+                    <i class="fa-regular fa-user" style="margin-right: 20px;width: 12px;display: flex;justify-content: center;"></i>
+                        <label 
+                        class="form-label" 
+                        for="form3Example10" 
+                        style="margin-left: 0px;">
+                        @ Username
+                        </label>
+                    </div>
+        
+        
+                    <div data-mdb-input-init="" class="form-outline inp mb-4">
+                        <input 
+                        type="text" 
+                        id="form3Example20" 
+                        class="form-control">
+                        <i class="fa-soild fa-phone fa-rotate-270 fa" style="margin-right: 20px;width: 12px;display: flex;justify-content: center;"></i>
+                        <label 
+                        class="form-label" 
+                        for="form3Example20" 
+                        style="margin-left: 0px;">
+                        Phone Number
+                        </label>
+                    </div>
+        
+        
+        
+                    <!-- Email input -->
+                    <div 
+                        data-mdb-input-init="" class="form-outline inp mb-4">
+                        <input type="email" id="form3Example30" class="form-control">
+                        <i class="fa-regular fa-envelope" style="margin-right: 20px;width: 12px;display: flex;justify-content: center;"></i>
+                        <label 
+                            class="form-label" 
+                            for="form3Example30" 
+                            style="margin-left: 0px;">
+                            Email address
+                        </label>
+                    </div>
+        
+                    <!-- Password input -->
+                    <div data-mdb-input-init="" class="form-outline inp mb-4">
+                        <input type="password" id="form3Example40" class="form-control">
+                        <i  class   ="eye fa-regular fa-eye-slash fa-sm" 
+                            onclick ="showHide()"
+                            style   ="margin-right: 20px;cursor: pointer;width: 12px;display: flex;justify-content: center;"></i>
+                        <label class="form-label" for="form3Example40" style="margin-left: 0px;">
+                            Last Password You Remember
+                        </label>
+                    </div>
+        
+                    <!-- Checkbox -->
+                    <div class="form-check d-flex justify-content-center mb-4">
+                        <input 
+                            class="form-check-input me-2" 
+                            type="checkbox" 
+                            value="" 
+                            id="form2Example320" 
+                            checked="">
+                        <label class="rmem d-flex align-items-center form-check-label" for="form2Example320">
+                            Subscribe to our newsletter
+                        </label>
+                    </div>
+        
+                    <!-- Submit button -->
+                    <button 
+                        data-mdb-ripple-init="" 
+                        type="send" 
+                        class="log-sign btn btn-primary btn-block mb-4">
+                        Send
+                    </button>
+                    <span 
+                    style="display: flex;justify-content: center;"
+                    id="Login" 
+                    onclick="forget()">Get back to Login</span>
+                </form>
+            </div>
+        </section>
+    </div>
+
+
+
+    <div class="footer pt-5  text-white-50 text-center text-md-start">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="info">
+                        <a class="navbar-brand" href="index.html">
+                            <img class="img-fluid mb-4" src="img/logoFoot.png" alt="">
+                        </a>
+                        <p class="mb-5">
+                            Pellentesque in ipsum id orci porta dapibus. 
+                            Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
+                        </p>
+                        <div class="copyright mb-5">
+                            Created By <span>Omar Tarek</span>
+                            <div>
+                                © 2022 - <span>Bondi Inc</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-2">
+                    <div class="links mb-5">
+                        <div class="h5 text-light">Links</div>
+                        <ul class="list-unstyled lh-lg">
+                            <li>Home</li>
+                            <li>Our Services</li>
+                            <li>Portfolio</li>
+                            <li>Testimonials</li>
+                            <li>Support</li>
+                            <li>Terms and Condition</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-2">
+                    <div class="links mb-5">
+                        <div class="h5 text-light">About Us</div>
+                        <ul class="list-unstyled lh-lg">
+                            <li>Sign In</li>
+                            <li>Register</li>
+                            <li>About Us</li>
+                            <li>Blog</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="contact mb-5">
+                        <h5 class="text-light">Contact Us</h5>
+                        <p class="lh-lg mt-3 mb-5">
+                            Get in touch with us via mail phone.
+                            We are waiting for your call or message
+                        </p>
+                        <a class="btn rounded-pill main-btn w-100" href="#">OmarTarek@gmail.com</a>
+                    
+                        
+                        <ul class="media-social d-flex mt-5 list-unstyled gap-4">
+
+                            <li>
+                                <a class="d-block text-light" href="#">
+                                    <svg class="svg-inline--fa fa-facebook fa-lg facebook rounded-circle p-2" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg><!-- <i class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i> Font Awesome fontawesome.com -->
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="d-block text-light" href="#">
+                                    <svg class="svg-inline--fa fa-twitter fa-lg twitter rounded-circle p-2" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><!-- <i class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"></i> Font Awesome fontawesome.com -->
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="d-block text-light" href="#">
+                                    <svg class="svg-inline--fa fa-linkedin fa-lg linkedin rounded-circle p-2" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg><!-- <i class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i> Font Awesome fontawesome.com -->
+                                </a>
+                            </li>
+
+                            
+                            <li>
+                                <a class="d-block text-light" href="#">
+                                    <svg class="svg-inline--fa fa-youtube fa-lg youtube rounded-circle p-2" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg><!-- <i class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"></i> Font Awesome fontawesome.com -->
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+<script type="text/javascript" src="js/mdb.umd.min.js"></script>
+<script type="text/javascript"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
