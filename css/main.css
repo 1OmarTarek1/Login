@@ -102,16 +102,16 @@ span        { cursor :   pointer               ; }
 
 /*start form*/
 
-.form-wrapper       { backdrop-filter : blur(4px) ; transition: all .5s; }
-.form-wrapper:hover { backdrop-filter : blur(5px) ; }
 form{
     padding         : 30px                      ;
     border          : .01px solid #ffffff50   ;
     border-radius   : 7px                       ;
+    backdrop-filter : blur(4px)                 ;
     transition      : all .5s                   ;
 }
 form:hover{
     border-color    : #ffffff71;
+    backdrop-filter : blur(5px)  ;
 }
 /*end form*/
 
@@ -215,57 +215,6 @@ input[ type=checkbox ]{ transform: scale( .8 ); }
 
 
 
-/*START FOOTER*/
-
-.footer {
-    border-top: 1px solid #ffffff46;
-    /* background-color: #00000044; */
-    backdrop-filter: blur(4px);
-    cursor: default;
-    
-}
-
-.footer .copyright > span{
-    color: var(--green-color);
-}
-.footer .copyright div span{
-    color: var(--yellow-color);
-}
-
-.footer .contact ul svg{
-    width: 20px;
-    height: 20px;
-}
-
-.footer .facebook{
-    background-color: #1877f2;
-}
-.footer .twitter{
-    background-color: #1da1f2;
-}
-.footer .linkedin{
-    background-color: #0077b5;
-}
-.footer .youtube{
-    background-color: #ff0000;
-}
-
-
-.footer .links ul li{
-    cursor: pointer;
-    transition:all .2s;
-}
-.footer .links ul li:hover{
-    color: var(--section-color);
-}
-
-@media screen and (max-width:767px) {
-    .footer .media-social{
-        justify-content: center;
-    }
-}
-
-/*END FOOTER*/
 
 
 
